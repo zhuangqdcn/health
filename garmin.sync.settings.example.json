@@ -1,0 +1,16 @@
+{
+  "download_dir": "garmin-data",
+  "timezone": "America/Los_Angeles",
+  "window_start": "09:00",
+  "schedule_time": "09:30",
+  "history": {
+    "enabled": true,
+    "start_date": null,
+    "days_per_run": 30
+  },
+  "include_original_files": true,
+  "refresh_recent_days": 3,
+  "request_delay_seconds": 0.25,
+  "timeout_seconds": 30,
+  "retries": 3
+}

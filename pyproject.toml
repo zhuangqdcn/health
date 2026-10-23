@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "health-garmin-sync"
+version = "0.1.0"
+description = "Resumable Garmin Personal API archive with Seattle-time daily windows"
+requires-python = ">=3.12"
+dependencies = [
+    "garmin-connect-personal-api-python>=1.0,<2",
+    "python-dotenv>=1.0,<2",
+    "tzdata>=2026.1",
+]
+
+[project.scripts]
+garmin-sync = "garmin_sync:main"
+
+[tool.setuptools]
+py-modules = ["garmin_sync"]
